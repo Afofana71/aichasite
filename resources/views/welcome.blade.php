@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
-      
+
       <!-- Bootstrap CSS -->
-      <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -64,6 +64,42 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+          /* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.carousel-indicators {
+  top: 1.5rem;
+  right: 1.5rem;
+  bottom: auto;
+  left: auto;
+  width: 1rem;
+  margin-left: 0;
+}
+
+.carousel-indicators > li {
+  margin-bottom: .25rem;
+}
+
+
         </style>
     </head>
     <body>
